@@ -1,0 +1,9 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: "`123Qwe"
+
+logging:
+  level:
+    root: INFO

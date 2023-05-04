@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: abroad
+logging:
+  level:
+    root: DEBUG

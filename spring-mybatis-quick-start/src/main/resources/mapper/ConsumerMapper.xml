@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.spring.mybatis.quickstart.mapper.ConsumerMapper">
+    <resultMap id="customerResultMap" type="org.example.spring.mybatis.quickstart.model.Consumer">
+        <result property="id" column="id" />
+        <result property="nickname" column="nickname" />
+        <result property="registerTime" column="register_time" />
+    </resultMap>
+
+    <select id="retrieveMultiple" resultMap="customerResultMap">
+        SELECT c.id , c.nickname , c.register_time ,
+        c.created_on , c.created_by , c.updated_on , c.updated_by
+        FROM consumer c
+        WHERE c.id > #{id}
+        ORDER BY id  ASC LIMIT #{limit};
+    </select>
+</mapper>

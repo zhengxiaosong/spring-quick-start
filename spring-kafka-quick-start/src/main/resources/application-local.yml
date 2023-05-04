@@ -1,0 +1,21 @@
+spring:
+  kafka:
+    bootstrap-servers: dev-kafka-evh-2.servicebus.windows.net:9093
+    properties:
+      security:
+        protocol: SASL_SSL
+      sasl:
+        mechanism: PLAIN
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="Endpoint=sb://dev-kafka-evh-2.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=fFRuU5QNipPuNR+MEHspInkZ4JnTSB2HavOyJfQ3Qg8=";
+    consumer:
+      enable-auto-commit: true
+      # latest, earliest, none
+      auto-offset-reset: none
+    producer:
+      acks: 1
+
+## logging-configuration
+logging:
+  level:
+    root: INFO

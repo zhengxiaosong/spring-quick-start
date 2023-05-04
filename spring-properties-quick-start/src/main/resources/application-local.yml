@@ -1,0 +1,9 @@
+quickstart:
+  user:
+    id: 1
+    userName: "Song.Z"
+    note : "A properties demo of spring"
+
+logging:
+  level:
+    root: DEBUG

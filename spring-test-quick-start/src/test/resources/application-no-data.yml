@@ -1,0 +1,23 @@
+## mybatis-configuration
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+## spring-boot-configuration
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:dbAcount  # 数据库连接地址，内存模式
+    username: dbAdmin
+    password: 1qaz@WSX
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath*:sql/db-schema.sql # 每次启动时执行ddl
+
+
+## logging-configuration
+logging:
+  level:
+    root: INFO

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.spring.test.quickstart.mapper.AccountMapper">
+    <resultMap id="accountResultMap" type="org.example.spring.test.quickstart.model.Account">
+        <result property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="information" column="information" />
+    </resultMap>
+
+    <select id="retrieveMultiple" resultMap="accountResultMap">
+        SELECT c.id , c.name , c.information
+        FROM accounts c
+        WHERE c.id >= #{id}
+        ORDER BY id  ASC LIMIT #{limit};
+    </select>
+
+    <insert id="append">
+        INSERT INTO accounts(id, name, information)
+        VALUES(#{id}, #{name}, #{information})
+        <selectKey>SELECT @@INDENTITY as ID</selectKey>
+    </insert>
+
+    <delete id="deletedById">
+        DELETE accounts WHERE id=#{id}
+    </delete>
+</mapper>

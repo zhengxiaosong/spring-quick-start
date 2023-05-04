@@ -1,0 +1,38 @@
+package org.example.spring.ioc.quickstart.v1.pojo;
+
+/**
+ * Description:
+ *
+ * @author Song.Z
+ */
+public class User {
+    private Long id;
+    private String userName;
+    private String note;
+
+    /*** === Setter and Getter === ***/
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+}

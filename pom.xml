@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>spring-quick-start</artifactId>
+    <packaging>pom</packaging>
+    <version>1.1-SNAPSHOT</version>
+    <modules>
+        <module>spring-ioc-quick-start</module>
+        <module>spring-qualifier-quick-start</module>
+        <module>spring-thymeleaf-quick-start</module>
+        <module>spring-properties-quick-start</module>
+        <module>spring-mybatis-quick-start</module>
+        <module>spring-test-quick-start</module>
+        <module>spring-kafka-quick-start</module>
+        <module>spring-drools-quick-start</module>
+        <module>spring-webapi-quick-start</module>
+    </modules>
+
+    <properties>
+        <spring.boot.dependencies.version>2.7.7</spring.boot.dependencies.version>
+        <spring.maven.plugin.version>2.7.4</spring.maven.plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
