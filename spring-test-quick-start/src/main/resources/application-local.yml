@@ -13,7 +13,7 @@ spring:
     password: 1qaz@WSX
   sql:
     init:
-      mode: never
+      mode: always
       schema-locations: classpath*:sql/db-schema.sql # 每次启动时执行ddl
       data-locations: classpath*:sql/data.sql        # 每次启动时执行dml
 
