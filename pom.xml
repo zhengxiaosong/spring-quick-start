@@ -18,6 +18,7 @@
         <module>spring-kafka-quick-start</module>
         <module>spring-drools-quick-start</module>
         <module>spring-webapi-quick-start</module>
+        <module>spring-aop-quick-start</module>
     </modules>
 
     <properties>

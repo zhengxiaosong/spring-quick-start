@@ -12,6 +12,7 @@
         <module name="spring-drools-quick-start" />
         <module name="spring-mybatis-quick-start" />
         <module name="spring-ioc-quick-start" />
+        <module name="spring-aop-quick-start" />
         <module name="spring-webapi-quick-start" />
         <module name="spring-thymeleaf-quick-start" />
         <module name="spring-qualifier-quick-start" />
