@@ -11,7 +11,7 @@
 
     <artifactId>spring-webapi-quick-start</artifactId>
     <packaging>jar</packaging>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1-${revsion}</version>
 
     <dependencies>
         <dependency>
