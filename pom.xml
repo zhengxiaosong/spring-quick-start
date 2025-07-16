@@ -34,22 +34,19 @@
         <profile>
             <id>dev</id>
             <properties>
-                <project.version.suffix>SNAPSHOT</project.version.suffix>
-                <revsion>SNAPSHOT</revsion>
+                <changelist>SNAPSHOT</changelist>
             </properties>
         </profile>
         <profile>
             <id>uat</id>
             <properties>
-                <project.version.suffix>alpha</project.version.suffix>
-                <revsion>alpha</revsion>
+                <changelist>alpha</changelist>
             </properties>
         </profile>
         <profile>
             <id>prod</id>
             <properties>
-                <project.version.suffix>release</project.version.suffix>
-                <revsion>release</revsion>
+                <changelist>release</changelist>
             </properties>
         </profile>
     </profiles>

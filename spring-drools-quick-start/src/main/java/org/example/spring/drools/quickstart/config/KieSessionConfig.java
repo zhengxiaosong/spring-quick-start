@@ -36,12 +36,12 @@ public class KieSessionConfig {
     @Bean
     public KieContainer kieContainer() throws IOException {
         final KieRepository kieRepository = getKieServices().getRepository();
-        kieRepository.addKieModule(new KieModule() {
-            @Override
-            public ReleaseId getReleaseId() {
-                return null;
-            }
-        });
+//        kieRepository.addKieModule(new KieModule() {
+//            @Override
+//            public ReleaseId getReleaseId() {
+//                return null;
+//            }
+//        });
         kieRepository.addKieModule(kieRepository::getDefaultReleaseId);
 
         KieBuilder kieBuilder = getKieServices().newKieBuilder(kieFileSystem());

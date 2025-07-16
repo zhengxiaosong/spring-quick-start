@@ -32,6 +32,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.maven.plugin.version}</version>
+                <configuration>
+                    <mainClass>org.example.spring.ioc.quickstart.v1.tester.IocTest</mainClass>
+                </configuration>
                 <executions>
                     <!-- 打包 -->
                     <execution>
