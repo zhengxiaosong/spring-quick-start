@@ -7,24 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-kafka-quick-start" />
+        <module name="spring-event-quick-start" />
+        <module name="spring-drools-quick-start" />
+        <module name="spring-properties-quick-start" />
+        <module name="spring-mybatis-quick-start" />
+        <module name="spring-ioc-quick-start" />
+        <module name="spring-aop-quick-start" />
+        <module name="spring-webapi-quick-start" />
+        <module name="spring-thymeleaf-quick-start" />
+        <module name="spring-qualifier-quick-start" />
+        <module name="spring-test-quick-start" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-aop-quick-start" target="1.8" />
-      <module name="spring-drools-quick-start" target="1.8" />
-      <module name="spring-ioc-quick-start" target="1.8" />
       <module name="spring-ioc-v2-quick-start" target="1.8" />
       <module name="spring-javafx-quick-start" target="11" />
       <module name="spring-jpa-quick-start" target="1.8" />
-      <module name="spring-kafka-quick-start" target="1.8" />
-      <module name="spring-mybatis-quick-start" target="1.8" />
-      <module name="spring-properties-quick-start" target="1.8" />
-      <module name="spring-qualifier-quick-start" target="1.8" />
-      <module name="spring-quick-start" target="1.8" />
       <module name="spring-security-quick-start" target="1.8" />
-      <module name="spring-test-quick-start" target="1.8" />
-      <module name="spring-thymeleaf-quick-start" target="1.8" />
-      <module name="spring-webapi-quick-start" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

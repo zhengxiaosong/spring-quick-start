@@ -19,6 +19,7 @@
         <module>spring-drools-quick-start</module>
         <module>spring-webapi-quick-start</module>
         <module>spring-aop-quick-start</module>
+        <module>spring-event-quick-start</module>
     </modules>
 
     <properties>
