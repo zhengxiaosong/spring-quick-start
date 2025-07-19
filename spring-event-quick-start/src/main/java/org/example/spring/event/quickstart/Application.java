@@ -25,5 +25,6 @@ public class Application {
 
         DemoService demoService = context.getBean(DemoService.class);
         demoService.doSomething();
+        log.info("Application stop!");
     }
 }
