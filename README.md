@@ -11,7 +11,7 @@
 - **spring-mybatis-quick-start**：Spring 集成 MyBatis 的基础用法。
 - **spring-kafka-quick-start**：Spring 集成 Kafka 消息队列的基础用法。
 - **spring-drools-quick-start**：Spring 集成 Drools 规则引擎的基础用法。
-- **spring-qualifier-quick-start**：@Qualifier 注解的使用示例。
+- **spring-qualifier-quick-start**：Spring 通过自定义条件注解和配置文件，实现 Spring Bean 的按需注入。
 - **spring-test-quick-start**：Spring 测试相关用法。
 - **spring-thymeleaf-quick-start**：Spring 集成 Thymeleaf 模板引擎的基础用法。
 - **spring-webapi-quick-start**：Spring Web API（RESTful 接口）开发基础。
