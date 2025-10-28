@@ -1,0 +1,7 @@
+google:
+  gemini:
+    api-key: AIzaSyDqKct4LoBgkT_JfHXxKs6NdLazuV7NlFM
+
+logging:
+  level:
+    root: DEBUG

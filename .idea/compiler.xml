@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-google-ai-quick-start" />
         <module name="spring-kafka-quick-start" />
         <module name="spring-event-quick-start" />
         <module name="spring-drools-quick-start" />
